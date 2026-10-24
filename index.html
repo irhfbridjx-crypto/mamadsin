@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "vzar.ttf";
+        margin: 5px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="btn">محمد یاسین</button>
+
+    <ul id="menu">
+      <li>سلام</li>
+      <li>سلام</li>
+    </ul>
+    <script src="script.js"></script>
+    <script>
+      let btn = document.getElementById("btn");
+      let menu = document.getElementById("menu");
+
+      btn.onclick = function () {
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      };
+    </script>
+  </body>
+</html>
